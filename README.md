@@ -56,3 +56,4 @@ Answer: I've added a number of my assumptions to the code inline with sort of wh
 - Input handling: Many of my functions could benefit from additional (or ANY) checks that the input given to them is reasonable and expected.
 - Dataframe schema checks: I had a co-worker recently get me into [pandera](https://pandera.readthedocs.io/en/stable/) and I think that the code I've written here would benefit a lot from run-time checks against expected schemas (e.g., what it should look like post extract, or post transform)
 - "Developer productivity"-style enhancements: While I used black, isort, and flake here, it would be nice to also conform to mypy and pydocstyle standards and also have all these tools running via pre-commit (just not nearly enough time to get that set-up)
+- My program also doesn't fail gracefully when there are no messages left in the queue (e.g., it polls without finding anything)
